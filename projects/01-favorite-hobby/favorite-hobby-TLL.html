@@ -1,0 +1,81 @@
+<!--
+	@author Tom Lenz <thomas.lenz96@gmail.com> AS The2b
+	@course Web and Distributed Programming
+	@project Favorite Hobby (Project 1)
+	@file 01-favorite-hobby.html
+	@semester Fall 2017
+-->
+
+<!DOCTYPE=html>
+<html>
+	<!-- Source the css file ./favorite-hobby-TLL.css -->
+	<link rel = "stylesheet" type = "text/css" href = "./favorite-hobby-TLL.css"></link>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>MMA</title> <!-- @TODO Change this later -->
+		<h1>Mixed Martial Arts</h1> <!-- @TODO This too -->
+	</head>
+
+	<body>
+		<!-- Top-line in-page targets -->
+		<p>
+			<h3 class = "oneline">
+				<a href = "#history">
+					History</a>	<!-- I need this crappy positioning for the hyperlink terminator because if I put it on a separate line, it'll add a blue hyperlink tail to the word, and that bugs me. A lot -->
+			</h3>
+			
+			<h3 class = "oneline" style = "padding-left:2em"></h3> <!-- This is here because if I add it to a class in my css, the padding would have a hyperlink attached to it. More specifically, if I had the tab attached to the <h3> it would do so -->
+
+			<h3 class = "oneline">
+				<a href = "#modernOrgs">
+					Modern Organizations</a>
+			</h3>
+
+			<h3 class = "oneline" style = "padding-left:2em"></h3>
+
+			<h3 class = "oneline">
+				<a href = "#equipment">
+					Equipment</a>
+			</h3>
+
+			<h3 class = "oneline" style = "padding-left:2em"></h3>
+
+			<h3 class = "oneline">
+				<a href = "#arts">
+					Common Martial Arts</a>
+			</h3>
+
+
+		</p> 
+
+		<hr />
+
+		<!-- History section -->
+		<p>
+			<h4 id = "history">History</h4>
+		</p>
+
+		<!-- @TODO Add more white space between sections -->
+
+		<!-- Modern Organizations section -->
+		<p>
+			<h4 id = "modernOrgs">Modern Organizations</h4>
+			<!-- Top fighters in orgs? Good for a list. Can include pics too -->
+			<!-- Hell, the orgs themselves can be a list -->
+		</p>
+
+		<!-- Equipment Section -->
+		<p>
+			<h4 id = "equipment">Equipment</h4>
+		</p>
+
+		<!-- Common Martial Arts Section -->
+		<p>
+			<h4 id = "arts">Common Martial Arts</h4>
+			<!-- @TODO Add a table with the most commonly practiced martial arts in UFC/Bellator/etc -->
+		</p>
+
+	</body>
+
+</html>

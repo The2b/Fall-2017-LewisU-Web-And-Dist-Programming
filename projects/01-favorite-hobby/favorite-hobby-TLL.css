@@ -1,0 +1,18 @@
+/*
+	@author Tom Lenz <thomas.lenz96@gmail.com> AS The2b
+	@course Web and Distributed Programming
+	@project Favorite Hobby (Project 1)
+	@file 01-favorite-hobby.css
+	@semester Fall 2017
+*/
+
+h3.oneline {
+	display:inline;
+}
+
+/*
+h3.oneline-tabbed {
+	display:inline;
+	padding-left:2em;
+}
+*/
