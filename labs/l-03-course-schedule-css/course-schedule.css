@@ -1,0 +1,10 @@
+/*
+ * @author Thomas Lenz <thomas.lenz96@gmail.com> AS The2b
+ * @course Web and Distributed Programming, Fall 2017
+ * @project Course Schedule With External CSS (Week 3 Lab)
+ * @file course-schedule-css.css
+ */
+
+h1.big-title {
+	font-size: 4em;
+}
