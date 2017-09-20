@@ -10,9 +10,19 @@ h3.oneline {
 	display:inline;
 }
 
-/*
-h3.oneline-tabbed {
-	display:inline;
-	padding-left:2em;
+a.external:hover {
+	color:blue;
 }
-*/
+
+a.external {
+	font-weight:bold;
+}
+
+img.scale-hover {
+	transition:width 1s,height 1s;
+}
+
+img.scale-hover:hover {
+	width:800;
+	height:800;
+}
