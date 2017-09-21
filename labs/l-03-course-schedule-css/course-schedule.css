@@ -5,6 +5,34 @@
  * @file course-schedule-css.css
  */
 
-h1.big-title {
+.big-title {
 	font-size: 4em;
+	font-weight:bold;
+}
+
+.rounded-box {
+	border:5px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:10px;
+	padding-bottom:10px;
+	border-radius:10px;
+	border-color:black;
+}
+
+.slight-left {
+	left:-20%;
+}
+
+.pink-round-button {
+	color:red;
+	background-color:pink;
+	width:50px;
+	height:50px;
+	border-radius:10px;
+
+}
+
+.blowup:hover {
+	
 }

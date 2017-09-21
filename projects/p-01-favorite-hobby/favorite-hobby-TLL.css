@@ -18,11 +18,29 @@ a.external {
 	font-weight:bold;
 }
 
-img.scale-hover {
+img.scale-hover { /* Using a transition effect */
 	transition:width 1s,height 1s;
 }
 
 img.scale-hover:hover {
-	width:800;
-	height:800;
+	width:500;
+	height:500;
+}
+
+table.champTable {
+	border-width:5px;
+	border-height:5px;
+	border-color:black;
+	border-style:solid;
+	border-collapse:collapse;
+	height:30%;
+	width:120%;
+}
+
+td,tr {
+	border-width:2px;
+	border-height:2px;
+	border-color:black;
+	border-style:solid;
+	border-collapse:collapse;
 }
