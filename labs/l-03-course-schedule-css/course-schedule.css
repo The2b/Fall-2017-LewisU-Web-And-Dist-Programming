@@ -6,22 +6,21 @@
  */
 
 .big-title {
-	font-size: 4em;
+	font-family:serif;
+	font-size:4em;
 	font-weight:bold;
 }
 
 .rounded-box {
-	border:5px;
-	padding-left:10px;
-	padding-right:10px;
-	padding-top:10px;
-	padding-bottom:10px;
+	border:5px solid;
+	padding:10px 10px 10px 10px;
 	border-radius:10px;
 	border-color:black;
 }
 
 .slight-left {
-	left:-20%;
+	position:relative;
+	left:20%;
 }
 
 .pink-round-button {
@@ -29,10 +28,15 @@
 	background-color:pink;
 	width:50px;
 	height:50px;
-	border-radius:10px;
+	border-radius:25px;
+	text-align: center;
+	line-height:.9;
+}
 
+.blowup {
+	
 }
 
 .blowup:hover {
-	
+	transform: scale(1.5,1.5);
 }
