@@ -1,0 +1,26 @@
+ Course Schedule in HTML5 with CSS
+Requirements
+Improve the look and feel of you Course Schedule assignment by adding visually appealing style via an external CSS that defines the following classes:
+
+    big-title: Makes the font very large, bold, and uses a serif font type. It should also center the text and increase the letter spacing.
+    rounded-box: Creates a thick border with rounded edges. Also increases the padding to 10px.
+    slight-left: Offsets the element's position 20% from the left, relative to where it would normally be placed.
+    pink-round-button: Make a completely round border and sets width and height to 50px. Sets the foreground color to red and background color to pink.
+    blowup:hover: Scales up the content by 150% (i.e. makes it bigger) and puts a border around it.
+
+Additional Requirements
+
+    Verify that your page should display correctly when using the Google Chrome browser
+    Validate your HTML5 file using the W3C validator service
+    Validate CSS file utiizing W3C validator service
+    Utilize proper programming style including the use of whitespace (line breaks and indents) to separate sections of your code
+    Include comment at the top of your HTML file containing your name, course name, semester, and "Week 4 Lab"
+
+What you Need to Know
+
+    CSS
+    HTML5 tags for headers, paragraphs, and line breaks
+    HTML5 list, tables, hyperlinks
+    HTML5 forms
+
+

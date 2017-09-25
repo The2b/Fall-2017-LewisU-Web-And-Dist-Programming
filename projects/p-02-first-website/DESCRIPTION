@@ -1,0 +1,37 @@
+ My First Azure Website
+
+Requirements
+Setup a Microsoft Azure Website by following the instructions in the "My First Website" video [Link].
+
+Before you start the video, there are a couple of notes/suggestions:
+
+    The video is produced at high resolution so depending on your screen resolution, you may need to scroll down to start or pause the video
+    Similarly, it may be easier to see details in the video if it is displayed full screen
+    Note that it is possible to utilize Windows drag-and-drop in Filezilla instead of the file selection method shown in the video
+    Once you have completed the above video and setup "Hello World -HTML" on Azure, log back into your account and:
+        Deploy your Project 1 to your Azure website
+        Deploy your Week 3 Lab to your Azure website
+        Deploy your Week 4 Lab to your Azure website
+    Finally, create a visually appealing landing page called 'index.html' that provides visually appealing labels and links in the form:
+        Project 1 - My Favorite Hobbie [link]
+        Project 2 - First Azure Website Hello World [link]
+        Week 3 Lab - ... [link] where "..." is the name of the lab
+        Week 4 Lab - ... [link]
+        etc.
+
+Additional Requirements
+Additional requirements are provided in the video.
+
+What you Need to Know
+Most of what you need to know is provided in the video. You will also need to have access to your:
+
+    Hello World - HTML
+    Project 1 - Favorite Hobby
+
+What to Turn In
+Create and submit an HTML5 compatable file named "project-02-xxx.html" (where "xxx" are your initials in lower case) that includes:
+
+    A block comment at the top that contains your name, course name, project number, and semester
+    A label and link to the Azure landing page that you created previously in this project
+
+

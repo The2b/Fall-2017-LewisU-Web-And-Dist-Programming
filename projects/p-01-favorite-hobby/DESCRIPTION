@@ -1,0 +1,49 @@
+ Favorite Hobby Web Page
+
+Requirements
+Create a web page using HTML5 and CSS that describes and provides information about your favorite hobby. For example:
+
+    Cooking
+    Photography
+    Travel
+    ...
+
+Your page should be aesthetically pleasing, well organized, and make use of the following HTML5 elements:
+
+    Images
+    Lists
+    Tables
+    Hyperlinks (both within the page and external)
+
+You should use these elements in non-trivial ways. In other words, they have to serve a purpose in the page.
+
+You will need to create a CSS style sheet that will style your HTML page. The styling should be applied to all elements of your page. Also, you must make use of at least one of the following properties (specify which you chose in a CSS comment):
+
+    Transition
+    Animation
+    Transform
+
+In addition, you must make use of the hover pseudoclass.
+
+The style sheet should be created in a separate file with a .css extension and then linked to your HTML page.
+
+Additional Requirements
+
+    Your page should display correctly when using the Google Chrome browser.
+    You need to validate both your HTML5 file and your CSS3 file using the W3C validator service. The links for the validator service is provided on blackboard. Your files should have no errors and validate successfully as HTML5 and CSS3, respectively.
+    Both, your HTML5 and CSS3 code needs to follow proper programming style. This includes use of whitespace (line breaks and indents) to separate sections of your code and comments (in both HTML and CSS) to document your code.
+    At the top of each file, put a block comment containing your name, course name, project number, and semester.
+
+What you Need to Know
+
+    HTML
+    CSS
+
+What to Turn In
+
+    You should turn in a html file and a css file that are intended to be stored in the same folder.
+    The files should be named "favorite-hobbie-XXX" were "XXX" are your initials in lower case letters.
+    One file should have a lower case "html" extension while the other should have a lower case "css" extension.
+    If needed, you should also submit any graphics files that are locally referenced in your html.
+
+
