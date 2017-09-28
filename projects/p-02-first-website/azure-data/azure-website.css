@@ -1,0 +1,80 @@
+/*
+ * @author Thomas Lenz <thomas.lenz96@gmail.com> AS The2b
+ * @date 28 Sept 2017
+ * @project Azure Website
+ * @file azure-website.css
+ * @course Web and Distributed Programming
+ * @semester Fall 2017
+ */
+
+
+header.pageTop {
+	background: #333bff;
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:20%;
+	overflow-x:visible;
+	z-index:1;
+}
+
+body.bodyStyle {
+	margin-top:10%;
+	background-color:#33f6ff;
+	z-index:-5;
+	left:0;
+	height:100%;
+	width:100%;
+}
+/*
+p.trueBody {
+	position:relative;
+	margin:0;
+	height:100%;
+	width:100%;
+	top:20%;
+	left:0%;
+	background-color:#33f6ff;
+	z-index:-5;
+}
+*/
+p.defaultText {
+	font-family:sans-serif;
+	font-size:20px;
+}
+
+h3.headerLabels {
+	position:relative;
+	bottom:-10%;
+	height:35%;
+	display:inline;
+}
+
+a.headerTextContents {
+	color:black;
+	font-family:sans-serif;
+	font-size:24px;
+	text-decoration:none;
+}
+
+/* Needed so links don't take up more room than they should */
+span.headerTabs {
+	padding-right:80px;
+}
+
+.dropdown {
+	position:relative;
+	display:inline-block;
+}
+
+.dropdown-contents {
+	display:none; /* hide by default, change on hover */
+	position:absolute;
+	background-color:red; /* @TODO Fix this */
+	z-index:3;
+}
+
+.dropdown:hover .dropdown-contents {
+	display:block;
+}

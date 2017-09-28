@@ -1,0 +1,37 @@
+
+JavaScript Basics
+Requirements
+
+Do each of the following as separate scripts embedded in HTML. You can alternatively do them all in one file and comment out each solution after it is complete.
+
+    Declare three variables: a containing 3, b containing 4, and c containing "cat" Then use document.write to display the results of the following computations on a webpage: a + b a + c
+    Use the prompt window method to retrieve 3 numbers from a user. Output the largest of the 3 numbers using the alert window method. Hint: the predefined function Math.max will return the largest of a group of numbers.
+    Use a loop to write the numbers 2 through 18 with one number on each line, and after each number, write “EVEN” if the number is even, and “ODD” if the number is odd. HINT: A number is even if it is evenly divisible by 2 (remainder is 0).
+    Create a person object with first name, last name, eye color and age properties. Use an iterator to display the properties on a web page.
+    Read in 5 names from a user and store them in an array. Display the names on a web page in alphabetical order.
+    Write a function that sums all the numbers in an array and returns the sum. Include code that declares an array and tests the function.
+    Write a script that asks the user to enter an address and checks if that address is in the correct format. The allowed format is the house number (sequence of one or more digits), followed by a space, followed by a direction (S,N,E,W), followed by an optional period, followed by a space, followed by a street name (must start with a letter and is followed by any number of letters, spaces, or periods), e.g. "123 S. Main St." is valid, but "x V. street" is not.
+
+Additional Requirements
+
+The following items should be part of nearly every assignment. It is best to get in the practice.
+
+    Verify that your page should display correctly when using the Google Chrome browser
+    Validate your HTML5 file using the W3C validator service
+    Utilize proper programming style including the use of whitespace (line breaks and indents) to separate sections of your code
+    Include comment at the top of your HTML file containing your name, course name, semester, and "Week X Lab" where "X" is the current week
+
+What you Need to Know
+
+For this assignment you will need to know the basics of JavaScript including:
+
+    variables
+    operators
+    selection
+    loops
+    objects
+    arrays
+    functions
+    pattern matching
+
+
