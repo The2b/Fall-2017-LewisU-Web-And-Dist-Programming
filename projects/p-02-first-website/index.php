@@ -28,7 +28,10 @@
 		<hr />
 
 		<p class="defaultText">
-			Welcome to the landing page for Tom Lenz's Web and Distributed Networking class. All the projects will be listed, as will the in-class labs. In addition, the GitHub repository is also included, which can be cloned or navigated through via the web client. The link in the navigation bar can be used for both purposes.
+			Welcome to the landing page for Tom Lenz's Web and Distributed Networking class. All the projects will be listed, as will the in-class labs. In addition, the GitHub repository is also included, which can be cloned or navigated through via the web client. The link in the navigation bar can be used for both purposes.<br /><br />
+			The banner links will take you to a page where each project or lab is listed, along with its respective GitHub folder and a direct link to a ZIP file for downloading.<br /><br />
+
+			The dropdown links will send you to a page implementing each respective project or lab. These links will open a new tab.
 		</p>
 	</body>
 

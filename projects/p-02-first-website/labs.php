@@ -28,10 +28,11 @@
 		<hr />
 	
 		<p class="defaultText">
-			Lab 1: Hello World <a href="https://github.com/The2b/Fall-2017-LewisU-Web-And-Dist-Programming/tree/master/labs/l-01-hello-world">[GitHub]</a> <a href="https://github.com/The2b/Fall-2017-LewisU-Web-And-Dist-Programming/raw/master/labs/l-01-hello-world/l-01-hello-world.zip">[ZIP]</a><br />
-			Lab 2: Course Schedule <a href="https://github.com/The2b/Fall-2017-LewisU-Web-And-Dist-Programming/tree/master/labs/l-02-course-schedule">[GitHub]</a> <a href="https://github.com/The2b/Fall-2017-LewisU-Web-And-Dist-Programming/raw/master/labs/l-02-course-schedule/l-02-course-schedule.zip">[ZIP]</a><br />
-			Lab 3: Course Schedule 2 &mdash; Electric Boogaloo <a href="https://github.com/The2b/Fall-2017-LewisU-Web-And-Dist-Programming/tree/master/labs/l-03-course-schedule-css">[GitHub]</a> <a href="https://github.com/The2b/Fall-2017-LewisU-Web-And-Dist-Programming/raw/master/labs/l-03-course-schedule-css/l-03-course-schedule-css.zip">[ZIP]</a><br />
-			Lab 4: JavaScript Basics <a href="https://github.com/The2b/Fall-2017-LewisU-Web-And-Dist-Programming/tree/master/labs/l-04-javascript-basics">[GitHub]</a><br />
+			In-class labs will be listed on this page. Clicking the name of the lab will take you to a webpage displaying the lab. All links below will open in a seperate page.<br /><br />
+			<a href="./deployments/labs/l-01-hello-world/hello-world-tll.php" target="_blank">Lab 1: Hello World</a> <a href="https://github.com/The2b/Fall-2017-LewisU-Web-And-Dist-Programming/tree/master/labs/l-01-hello-world">[GitHub]</a> <a href="https://github.com/The2b/Fall-2017-LewisU-Web-And-Dist-Programming/raw/master/labs/l-01-hello-world/l-01-hello-world.zip">[ZIP]</a><br />
+			<a href="./deployments/labs/l-02-course-schedule/course-schedule.php" target="_blank">Lab 2: Course Schedule</a> <a href="https://github.com/The2b/Fall-2017-LewisU-Web-And-Dist-Programming/tree/master/labs/l-02-course-schedule">[GitHub]</a> <a href="https://github.com/The2b/Fall-2017-LewisU-Web-And-Dist-Programming/raw/master/labs/l-02-course-schedule/l-02-course-schedule.zip">[ZIP]</a><br />
+			<a href="./deployments/labs/l-03-course-schedule-css/course-schedule-css.php" target="_blank">Lab 3: Course Schedule 2 &mdash; Electric Boogaloo</a> <a href="https://github.com/The2b/Fall-2017-LewisU-Web-And-Dist-Programming/tree/master/labs/l-03-course-schedule-css">[GitHub]</a> <a href="https://github.com/The2b/Fall-2017-LewisU-Web-And-Dist-Programming/raw/master/labs/l-03-course-schedule-css/l-03-course-schedule-css.zip">[ZIP]</a><br />
+			<a href="./deployments/labs/l-04-javascript-basics/javascript-basics.php" target="_blank">Lab 4: JavaScript Basics</a> <a href="https://github.com/The2b/Fall-2017-LewisU-Web-And-Dist-Programming/tree/master/labs/l-04-javascript-basics">[GitHub]</a><br />
 		</p>
 	</body>
 
