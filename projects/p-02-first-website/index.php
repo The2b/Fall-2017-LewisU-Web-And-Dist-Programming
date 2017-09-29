@@ -24,6 +24,9 @@
 			include('header.html');
        		?>
 		
+		<h1 style="font-family:sans-serif">Home</h1>
+		<hr />
+
 		<p class="defaultText">
 			Welcome to the landing page for Tom Lenz's Web and Distributed Networking class. All the projects will be listed, as will the in-class labs. In addition, the GitHub repository is also included, which can be cloned or navigated through via the web client. The link in the navigation bar can be used for both purposes.
 		</p>

@@ -23,10 +23,11 @@
 		<?php
 			include('header.html');
 		?>
+			
+		<h1>Projects</h1>
+		<hr />
 
 		<p class="defaultText">
-			<h1>Projects</h1>
-			<hr />
 			Project 1: Favorite Hobby <a href="https://github.com/The2b/Fall-2017-LewisU-Web-And-Dist-Programming/tree/master/projects/p-01-favorite-hobby">[GitHub]</a> <a href="https://github.com/The2b/Fall-2017-LewisU-Web-And-Dist-Programming/raw/master/projects/p-01-favorite-hobby/p-01-favorite-hobby.zip">[ZIP]</a><br />
 			Project 2: Azure Website <a href="https://github.com/The2b/Fall-2017-LewisU-Web-And-Dist-Programming/tree/master/projects/p-02-first-website">[GitHub]</a><br />
 		</p>
