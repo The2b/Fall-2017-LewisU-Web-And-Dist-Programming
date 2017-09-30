@@ -14,8 +14,9 @@
 		<title>JavaScript Basics</title>
 	</head>
 
-	<!-- Script 1 -->
+	<!--
 	<script type = "text/javascript">
+	// Script 1
 		var a = 3;
 		var b = 4;
 		var c = "cat";
@@ -24,8 +25,8 @@
 		document.write("<br />");
 	</script>
 
-	<!-- Script 2 -->
 	<script type = "text/javascript">
+	// Script 2
 		var input1 = 0;
 		var input2 = 0;
 		var input3 = 0;
@@ -37,8 +38,8 @@
 		document.write("<br />");
 	</script>
 
-	<!-- Script 3 -->
 	<script type = "text/javascript">
+	// Script 3
 		for(var index = 2; index <= 18; index++) {
 			var odd = (index%2);
 			document.write(index + ": ");
@@ -53,8 +54,8 @@
 		document.write("<br />");
 	</script>
 
-	<!-- Script 4 -->
 	<script type = "text/javascript">
+	// Script 4
 		var person = {firstName: "Jane", lastName: "Doe", eyeColor: "Brown", age: "45"};
 		for(var propid in person) {
 			document.write(person[propid] + "<br />");
@@ -62,11 +63,11 @@
 		document.write("<br />");
 	</script>
 
-	<!-- Script 5 -->
 	<script type = "text/javascript">
+	// Script 5
 		var names = [0,0,0,0,0];
 		for (var index in names) {
-			names[index] = prompt("Name " + (index+1) + ":","");
+			names[index] = prompt("Name " + String(Number(index)+1) + ":","");
 		}
 
 		names.sort();
@@ -77,8 +78,8 @@
 		document.write("<br />");
 	</script>
 
-	<!-- Script 5 -->
 	<script type = "text/javascript">
+	// Script 6
 		function addArray(arrayToAdd) {
 			var total = 0;
 			for(var index in arrayToAdd) {
@@ -91,8 +92,24 @@
 		var sum = addArray(arrayToSum);
 		document.write("Array total: " + sum + "<br />");
 		document.write("<br />");
-	</script> 
+	</script>
 
-	<!-- Script 6 -->
+	-->
+
 	<script type = "text/javascript">
+	// Script 7
 		var address = prompt("Address to validate:","");
+		// Accepted format as a POSIX Extended regex: "[0-9]* [SNEW]\.? [A-Za-z][A-Za-z \.]{0,}"
+		// I will note the assignment specifically says in reference to the street name: "must start with a letter, and is followed by any number of letters, spaces, or periods". I'm only including spaces, and not all whitespace, because of this
+		var pattern = /[0-9]* [SNEW]\.? [A-Za-z][A-Za-z \.]{0,}/;
+
+		var addrMatch = address.match(pattern);
+
+		if(addrMatch == null) {
+			document.write("Address is invalid");
+		}
+
+		else {
+			document.write("Address is valid");
+		}
+	</script>
