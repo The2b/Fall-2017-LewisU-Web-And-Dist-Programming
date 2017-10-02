@@ -21,7 +21,7 @@
 	<body class="bodyStyle">
 
 		<?php
-			include('header.html');
+			include("https://raw.githubusercontent.com/The2b/Fall-2017-LewisU-Web-And-Dist-Programming/master/projects/p-02-first-website/header.html");
        		?>
 
 		<h1 style="font-family:sans-serif">Labs</h1>
