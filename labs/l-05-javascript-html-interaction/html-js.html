@@ -1,0 +1,33 @@
+<!--
+	@author Thomas Lenz <thomas.lenz96@gmail.com> AS The2b
+	@date 04 Oct 2017
+	@project JavaScript & HTML interaction
+	@file html-js.html
+	@course Web and Dist Programming
+	@semester Fall, 2017
+-->
+
+<!DOCTYPE=html>
+<html>
+	<head>
+		<meta charset = "utf-8" />
+		<title>JavaScript and HTML Interaction</title>
+		<script type="text/javascript" src="html-js.js"></script>
+	</head>
+
+	<body onload="load()">
+		<img src="red-apples.jpg" id="theImage" alt="Image array" style="width:400; height:300"></img>
+
+		<br /><br />
+
+		<!-- Create the form -->
+		<form>
+			<label for="imageURL">Source URL: </label>
+			<input id="imageURL" type="text"><br /><br />
+			
+			<button id="addButton" value="Add image" type="button" onclick="clickSubmit()">Add Image</button>
+
+			<button id="nextImageButton" value="Next image" type="button" onclick="clickNext()">Next Image</button>
+		</form>
+	</body>
+</html>
