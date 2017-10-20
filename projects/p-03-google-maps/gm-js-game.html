@@ -11,9 +11,18 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="./gm-js-game.css"></link>
-		<script type="text/javascript" src="dm-js-game.js"></script>
+		<script type="text/javascript" src="gm-js-game.js"></script>
 		<meta charset="utf-8">
 		<title>Google Maps Find It!</title>
 	</head>
+
 	<body>
-		
+		<!-- Onclick or google's events work here.
+	  	<div id="gameMap" onclick="checkWinConditions()"></div>
+		-->
+		<div id="gameMap"></div>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1jIuVAEJsvYsGEN8iJJwegU-tPCu6Yfg" async defer onload="buildMap()"></script> <!-- Load the map after we declare gameMap, its container -->
+
+
+	</body>
+</html>

@@ -23,7 +23,7 @@ The Google Maps JavaScript API is a broadly used and sophisticated Web API. It c
     Start by completing the Google Maps JavaScript Getting Started tutorial [Link]
     After you have your Google Maps API key and have successfully completed the tutorial try to understand how the Maps API works by looking at the API reference to see the possible properties, methods, and events you can use in your program
     Copy the "Hello World" example HTML file and make sure it runs locally... make sure to replace the "YOUR_API_KEY" with your actuall key
-    Once you have Hello World example working, review the JavaScript Event Listeners documentation [Link] to understand how you will add event listenders to your map (you will need to add a "bounds_changed" event at a minimum)
+    Once you have Hello World example working, review the JavaScript Event Listeners documentation [Link] to understand how you will add event listenders to your map (you will need to add a "bounds_changed" event at a minimum) **Wanna bet?**
     Review the "Google Maps Garage: Where's My Map!" video [Link] if you are having difficulty with your map showing up in the browser
     Experiment with:
         Creating a new location using the LatLng constructor similar to:

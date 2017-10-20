@@ -1,0 +1,19 @@
+/**
+ * @author Thomas Lenz <thomas.lenz96@gmail.com> AS The2b
+ * @date 12 October 2017
+ * @project Google Maps JS API
+ * @file gm-js-game.css
+ * @course Web and Dist Programming
+ * @semester Fall, 2017
+ */
+
+/* Google says to always set the map height explicitly */
+#gameMap {
+	height:100%;
+}
+
+body {
+	padding:0;
+	margin:0;
+	height:100%;
+}
