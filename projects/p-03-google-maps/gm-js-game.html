@@ -7,6 +7,8 @@
 	@semester Fall, 2017
 -->
 
+<!-- @TODO consider adding a "Start" screen while the map loads -->
+
 <!DOCTYPE=html>
 <html>
 	<head>
@@ -18,11 +20,17 @@
 
 	<body>
 		<!-- Onclick or google's events work here.
-	  	<div id="gameMap" onclick="checkWinConditions()"></div>
+	  		<div id="gameMap" onclick="checkWinConditions()"></div>
 		-->
 		<div id="gameMap"></div>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1jIuVAEJsvYsGEN8iJJwegU-tPCu6Yfg" async defer onload="buildMap()"></script> <!-- Load the map after we declare gameMap, its container -->
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1jIuVAEJsvYsGEN8iJJwegU-tPCu6Yfg&libraries=geometry" async defer onload="buildMap()"></script> <!-- Load the map after we declare gameMap, its container -->
+		<!-- Also load the geography libs so we can do distance calcs for hints -->
 
-
+		<!-- Build the footer -->
+		<p id="footer-section" class="footer">
+			<h2 id="score" class="score">Score: 0</h2>
+			<h2 id="hint" class="hint">Hint</h2>
+			<h2 id="gettingStarted" class="gettingStarted">Getting Started</h2>
+		</p>
 	</body>
 </html>

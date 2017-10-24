@@ -36,20 +36,31 @@ Requirements
 
 The web page should be hosted on your Azure website and contain the following:
 
-    Header text (your names, project#, course name, semester)
-    Game title
-    The Google Maps interface
-    Text with the hints that guide the player
-    The score display
-    A separate "Getting Started" section that provides an overview and explains how to play from a user perspective
+??? Header text (your names, project#, course name, semester)
+??? Game title
+*** The Google Maps interface
+*** Text with the hints that guide the player
+*** The score display
+*** A separate "Getting Started" section that provides an overview and explains how to play from a user perspective
 
-Styling: All elements in the web page should be styled using CSS3. You will be graded based on the styling and ease of use. You should ask at least one other person to try the game without your input. Watch them and listen to their feedback.
+Styling:
+*******	All elements in the web page should be styled using CSS3.
+*******	You will be graded based on the styling and ease of use. You should ask at least one other person to try the game without your input. Watch them and listen to their feedback.
 
-Event Processing: When the page loads, initialize the zoom level to 1 and the center of the map to be (0.0, 0.0). Then initialize the current location to be the first in a list that you hard code into the script.
+Event Processing:
+*******	When the page loads, initialize the zoom level to 1 and the center of the map to be (0.0, 0.0).
+*******	Then initialize the current location to be the first in a list that you hard code into the script.
 
-If the center of the map changes, check if the current location is within the map bounds (using the map.getBounds() method) and update the hint text. Also, check for the scoring condition (within bounds and zoom level = 8). If the player scored (i.e. found the location), alert the user, update the score and choose the next location on the list. Check if the game is over. If it is over, redirect the browser’s window to a game over html page, which will display the text “Game Over. You Won!”
+*******	If the center of the map changes, check if the current location is within the map bounds (using the map.getBounds() method) and update the hint text.
+******* Also, check for the scoring condition (within bounds and zoom level = 8). 
+	If the player scored (i.e. found the location)...
+	*******	alert the user,
+	*******	update the score and
+	*******	choose the next location on the list.
+	*******	Check if the game is over. 
+		If it is over, redirect the browser’s window to a game over html page, which will display the text “Game Over. You Won!”
 
-If the zoom level changes, do the same as above, but also make the hint text more specific as the zoom increases. You should have a different hint text for each zoom level from 1 to 8.
+******* If the zoom level changes, do the same as above, but also make the hint text more specific as the zoom increases. You should have a different hint text for each zoom level from 1 to 8.
 
 Note: both the change of the map center and a change in the zoom level will cause the bounds_changed event to occur. So you can just make your code respond to that one event by implementing the appropriate event handling function.
 Additional Requirements

@@ -9,11 +9,43 @@
 
 /* Google says to always set the map height explicitly */
 #gameMap {
-	height:100%;
+	height:90%;
+	top-left:0;
+	padding:0;
+	margin:0;
 }
 
 body {
 	padding:0;
 	margin:0;
 	height:100%;
+}
+
+p.footer {
+	height:0px;
+	padding:0;
+	margin:0;
+	background-color:white;
+}
+
+h2.score {
+	position:absolute;
+	left:8%;
+	display:inline-block;
+}
+
+h2.gettingStarted {
+	cursor:help;
+	right:8%;
+	position:absolute;
+	display:inline-block;
+}
+
+h2.hint {
+	cursor:help;
+	position:relative;
+	left:40%;
+	text-align:center;
+	display:inline-block;
+       	visibility:hidden; /* Changes in JS */
 }
