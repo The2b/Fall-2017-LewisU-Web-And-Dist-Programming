@@ -7,8 +7,6 @@
 	@semester Fall, 2017
 -->
 
-<!-- @TODO consider adding a "Start" screen while the map loads -->
-
 <!DOCTYPE=html>
 <html>
 	<head>
@@ -19,18 +17,26 @@
 	</head>
 
 	<body>
-		<!-- Onclick or google's events work here.
-	  		<div id="gameMap" onclick="checkWinConditions()"></div>
-		-->
-		<div id="gameMap"></div>
+		<!-- Build the 3 screens we'll use -->
+		<div id="startScreen" class="screen" style="z-index:1000;visibility:visible;background-color:black" onclick="startGame()">
+			<p id="loadingString" class="splashScreenText">Loading the map...</p>
+		</div>
+		
+		<div id="gameOver" class="screen" style="z-index:1" onclick="resetGame()">
+			<p id="gameOverString" class="splashScreenText">Game over!!&n;&n;You found all eight locations! Click anywhere to begin again!</p>
+		</div>
+
+
+		<div id="gameMap" class="screen" style="z-index:2"></div>
+		
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1jIuVAEJsvYsGEN8iJJwegU-tPCu6Yfg&libraries=geometry" async defer onload="buildMap()"></script> <!-- Load the map after we declare gameMap, its container -->
 		<!-- Also load the geography libs so we can do distance calcs for hints -->
 
 		<!-- Build the footer -->
 		<p id="footer-section" class="footer">
-			<h2 id="score" class="score">Score: 0</h2>
-			<h2 id="hint" class="hint">Hint</h2>
-			<h2 id="gettingStarted" class="gettingStarted">Getting Started</h2>
+			<p id="score" class="score">Score: 0</p>
+			<p id="hint" class="hint">Hint</p>
+			<p id="gettingStarted" class="gettingStarted">Getting Started</p>
 		</p>
 	</body>
 </html>

@@ -8,11 +8,22 @@
  */
 
 /* Google says to always set the map height explicitly */
-#gameMap {
+.screen {
 	height:90%;
-	top-left:0;
+	width:100%;
+	top:0;
+	left:0;
 	padding:0;
 	margin:0;
+	position:absolute;
+	visibility:hidden;
+}
+
+p.splashScreenText {
+	background-color: black;
+	color:white;
+	font-size:48px;
+	text-align:center;
 }
 
 body {
@@ -22,30 +33,47 @@ body {
 }
 
 p.footer {
-	height:0px;
-	padding:0;
-	margin:0;
+	height:90%;
+	padding:0px;
+	margin:0px;
+	bottom:0px;
+	left:0px;
+	width:100%;
 	background-color:white;
+	text-align:center;
+	display:block;
 }
 
-h2.score {
-	position:absolute;
-	left:8%;
+p.score {
 	display:inline-block;
-}
-
-h2.gettingStarted {
-	cursor:help;
-	right:8%;
-	position:absolute;
-	display:inline-block;
-}
-
-h2.hint {
+	font-size:1.5em;
+	font-weight:bold;
+	text-align:center;
+	width:33%;
+	left:-5%;
 	cursor:help;
 	position:relative;
-	left:40%;
-	text-align:center;
+}
+
+p.gettingStarted {
+	cursor:help;
 	display:inline-block;
+	font-size:1.5em;
+	font-weight:bold;
+	right:-5%;
+	width:33%;
+	position:relative;
+	text-align:center;
+}
+
+p.hint {
+	cursor:help;
+	width:33%;
+	display:inline-block;
+	font-size:1.5em;
+	font-weight:bold;
+	position:relative;
+	text-align:center;
+	text-align-last:center;
        	visibility:hidden; /* Changes in JS */
 }

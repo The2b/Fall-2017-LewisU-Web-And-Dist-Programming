@@ -26,6 +26,7 @@ var startingPoints; // @TODO hard code starting points
 var markers;
 var locationIndex = 0;
 var score = 0;
+var isLoaded = 0;
 
 function buildMap() {
 	
@@ -39,6 +40,8 @@ function buildMap() {
 		zoom: 1
 	});
 
+	myMap.addListener('idle',startupScreen);
+
 	// Move the map
 	myMap.setCenter(startingPoints[0]);
 	myMap.setZoom(DEFAULT_ZOOM);
@@ -50,36 +53,29 @@ function buildMap() {
 	attachListeners();
 
 	// Show hints
-	document.getElementById("hint").display = "inline-block";
+	document.getElementById("hint").visibility = "visible";
 }
 
 /**
  * When the map needs to reset, usually because the user got a location, we'll call this function
- * I should probably add a reset button tho @TODO
  */
-
 function resetMap() {
-	//myMap.setCenter(startingPoints[locationIndex]); @TODO @DEBUG
-	myMap.setCenter(startingPoints[0]); // @DEBUG
+	myMap.setCenter(startingPoints[locationIndex]);
 	myMap.setZoom(DEFAULT_ZOOM);
 }
 
 /**
  * When the user moves the map, we execute this function. It checks the zoom level and, if appropriate, checks if the map contains the location we're looking for.
  * Runs the winner() function (working title) if they're in the correct area, does nothing if not
- *
- * May make this on click instead, since we want to check when it moves OR zoom level changes @TODO
  */
 
 function checkWinConditions() {
-	//alert("Event works. Zoom level: " + myMap.getZoom()); // @DEBUG @TODO
 	if(myMap.getZoom() < REQUIRED_ZOOM) {
 		giveHint(); // What hint to give is handled in this function
 	}
 
 	else if(myMap.getZoom() >= REQUIRED_ZOOM) {
 		if(myMap.getBounds().contains(locations[locationIndex])) {
-			//alert ("A Winner is you!!"); @DEBUG
 			win();
 		}
 	}
@@ -93,15 +89,21 @@ function checkWinConditions() {
 function win() {
 	if(locationIndex < NUM_LOCATIONS-1) {
 		alert("You found location number " + (locationIndex+1) + ", " + locationNames[locationIndex]);
+
 		markers[locationIndex].setMap(myMap);
+		
+		myMap.setCenter(markers[locationIndex].getPosition());
+		myMap.setZoom(MARKER_ZOOM);
+		
 		locationIndex++;
-		score++; // @TODO markers
+		score++;
+		
 		document.getElementById("score").innerHTML = ("Score: " + score);
-		resetMap();
 	}
 
 	else {
 		alert("Congratulations!! You win!!"); // Add redirect @TODO
+		aWinnerIsYou();
 	}
 }
 
@@ -141,7 +143,14 @@ function defineLocations() {
 	];
 	
 	startingPoints = [
-		new google.maps.LatLng(40.979898,-97.207031) // @TODO Maybe change this. It's about middle America atm
+		new google.maps.LatLng(40.979898,-97.207031), // @TODO Maybe change this. It's about middle America atm. Prob fine for #1
+		new google.maps.LatLng(39.1733632,-111.4039589),
+		new google.maps.LatLng(39.0028165,-75.6324745),
+		new google.maps.LatLng(40.9971699,-103.5157753),
+		new google.maps.LatLng(38.9088401,-109.0528847),
+		new google.maps.LatLng(38.8061784,-85.2784706),
+		new google.maps.LatLng(34.6520328,-86.7726112),
+		new google.maps.LatLng(40.4977834,-81.1036659)
 	];
 
 	markers = [
@@ -195,42 +204,34 @@ function defineLocations() {
 	];
 }
 
-// @TODO Probably should delete this @NOTE
-function giveHint() { // @TODO
+function giveHint() {
 	document.getElementById("hint").innerHTML = hintFooter();
 	document.getElementById("hint").style.visibility = "visible";
-	return;
-}
-
-function helpMessage() { // @TODO
-	alert(
-		""
-	);
 }
 
 function hintPopup() {
-	alert(locationHints[locationIndex]);
+	alert(locationHints[locationIndex] + "\nZoom level: " + myMap.getZoom());
 }
 
 function hintFooter() {
 	var distance = google.maps.geometry.spherical.computeDistanceBetween(myMap.getCenter(),locations[locationIndex]);
 	var hint = "";
-	if(distance < FIFTY_MILES) {
-		hint = "White Hot";
+	if(distance < FIFTY_MILES && myMap.getZoom() >= 7) {
+		hint = "White Hot!";
 		return hint;
 	}
 	
-	else if(distance < ONE_HUNDRED_MILES) {
-		hint = "On Fire!";
+	else if(distance < ONE_HUNDRED_MILES && myMap.getZoom() >= 6) {
+		hint = "Warm";
 		return hint;
 	}
 
-	else if(distance < TWO_FIFTY_MILES) {
+	else if(distance < TWO_FIFTY_MILES && myMap.getZoom() >= 5) {
 		hint = "Cold";
 		return hint;
 	}
 
-	else if(distance < FIVE_HUNDRED_MILES) {
+	else if(distance < FIVE_HUNDRED_MILES && myMap.getZoom() >= 4) {
 		hint = "May as well be in Antarctica";
 		return hint;
 	}
@@ -248,8 +249,10 @@ function hintFooter() {
 
 function attachListeners() {
 	myMap.addListener('bounds_changed', checkWinConditions);
-	document.getElementById("gettingStarted").addEventListener("click",helpMessage);
+	myMap.addListener('bounds_changed', hintFooter);
+	document.getElementById("gettingStarted").addEventListener("click",displayHelp);
 	document.getElementById("hint").addEventListener("click",hintPopup);
+	document.getElementById("score").addEventListener("click",resetMap);
 
 	// This is the simplest way I could do it without passing vars through like the instructor said not to do in class
 	for(var index = 0;index < NUM_LOCATIONS; index++) {
@@ -261,4 +264,59 @@ function attachListeners() {
 			myMap.setZoom(MARKER_ZOOM);
 		});
 	}
+}
+
+function displayHelp() {
+	alert(
+		"This is a game using Google Maps to find location through the hot and cold meter, along with specific hints\n\n" +
+		"The goal is to find all 8 locations in the game. The game ends after all 8 locations are found.\n\n" +
+		"A location can only be found at a minimum zoom level of 8. The game starts off at zoom level 5.\n\n" +
+		"The current zoom level can be found with the specific hint.\n\n" +
+		"The hot/cold indicatior is limited by zoom level. Each zoom level past the starting level (4-7) becomes more specific.\n\n" + //@TODO
+		"Once the location is in the map while the zoom level is at least 8, a marker is plcaed.\n\n" +
+		"Once you have the marker, the location can be focused by double clicking the marker.\n\n" +
+		"The score is displayed in the bottom left corner. When you find all 8, you win!\n\n" +
+		"To re-center the map on the starting point of your current goal, click the score"
+	);
+}
+
+function aWinnerIsYou() {
+	// So for this, we'll hide the 2 top displays (map and start screen), and show the gameOver screen.
+	document.getElementById("gameMap").style.visibility = "hidden"; // @TODO may want to switch to display:none
+	document.getElementById("startScreen").style.visibility = "hidden";
+	document.getElementById("gameOver").style.visibility = "visible";
+}
+
+function startGame() {
+	if(isLoaded) {
+		// Hide the visibility of start and end screens, show map screen
+		document.getElementById("startScreen").style.visibility = "hidden";
+		document.getElementById("gameOver").style.visibility = "hidden";
+		document.getElementById("gameMap").style.visibility = "visible";
+	}
+}
+
+function resetGame() {
+	// Hide the visibility of end and map screen, show start screen
+	document.getElementById("gameOver").style.visibility = "hidden";
+	document.getElementById("gameMap").style.visibility = "hidden";
+	document.getElementById("startScreen").style.visibility = "visible";
+
+	// Reset vars
+	locationIndex = 0;
+	score = 0;
+
+	// Remove markers
+	for(index = 0; index < NUM_LOCATIONS; index++) {
+		markers[index].setMap(null);
+	}
+
+	// Reset map
+	resetMap();
+}
+
+function startupScreen() {
+	isLoaded = 1;
+	document.getElementById("loadingString").innerHTML = "Click anywhere to begin";
+	google.maps.event.clearListeners(myMap,'idle'); // No need to listen to this anymore
 }
