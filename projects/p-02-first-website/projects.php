@@ -31,6 +31,7 @@
 			Here, you will find the projects for this course. Clicking the names of the project will open a webpage displaying the project. All links below will open in a new tab.<br /><br />
 			<a href="./deployments/projects/p-01-favorite-hobby/favorite-hobby.php" target="_blank">Project 1: Favorite Hobby</a> <a href="https://github.com/The2b/Fall-2017-LewisU-Web-And-Dist-Programming/tree/master/projects/p-01-favorite-hobby">[GitHub]</a> <a href="https://github.com/The2b/Fall-2017-LewisU-Web-And-Dist-Programming/raw/master/projects/p-01-favorite-hobby/p-01-favorite-hobby.zip">[ZIP]</a><br />
 			<a href="./index.php" target="_blank">Project 2: Azure Website</a> <a href="https://github.com/The2b/Fall-2017-LewisU-Web-And-Dist-Programming/tree/master/projects/p-02-first-website">[GitHub]</a><br />
+			<a href="./deployments/projects/p-03-google-maps/gm-js-game-html.php" target="_blank">Project 3: Google Maps JS API</a> <a href="https://github.com/The2b/Fall-2017-LewisU-Web-And-Dist-Programming/tree/master/projects/p-03-google-maps">[GitHub]</a>
 		</p>
 	</body>
 
