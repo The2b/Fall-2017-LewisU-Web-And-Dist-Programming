@@ -22,7 +22,7 @@ var myMap;
 var locations;
 var locationNames;
 var locationHints;
-var startingPoints; // @TODO hard code starting points
+var startingPoints;
 var markers;
 var locationIndex = 0;
 var score = 0;
@@ -143,7 +143,7 @@ function defineLocations() {
 	];
 	
 	startingPoints = [
-		new google.maps.LatLng(40.979898,-97.207031), // @TODO Maybe change this. It's about middle America atm. Prob fine for #1
+		new google.maps.LatLng(40.979898,-97.207031),
 		new google.maps.LatLng(39.1733632,-111.4039589),
 		new google.maps.LatLng(39.0028165,-75.6324745),
 		new google.maps.LatLng(40.9971699,-103.5157753),
@@ -254,6 +254,9 @@ function attachListeners() {
 	document.getElementById("hint").addEventListener("click",hintPopup);
 	document.getElementById("score").addEventListener("click",resetMap);
 
+	document.getElementById("startScreen").addEventListener("click",startGame);
+	document.getElementById("gameOver").addEventListener("click",resetGame);
+
 	// This is the simplest way I could do it without passing vars through like the instructor said not to do in class
 	for(var index = 0;index < NUM_LOCATIONS; index++) {
 		markers[index].setClickable(true);
@@ -282,7 +285,7 @@ function displayHelp() {
 
 function aWinnerIsYou() {
 	// So for this, we'll hide the 2 top displays (map and start screen), and show the gameOver screen.
-	document.getElementById("gameMap").style.visibility = "hidden"; // @TODO may want to switch to display:none
+	document.getElementById("gameMap").style.visibility = "hidden";
 	document.getElementById("startScreen").style.visibility = "hidden";
 	document.getElementById("gameOver").style.visibility = "visible";
 }
@@ -299,12 +302,13 @@ function startGame() {
 function resetGame() {
 	// Hide the visibility of end and map screen, show start screen
 	document.getElementById("gameOver").style.visibility = "hidden";
-	document.getElementById("gameMap").style.visibility = "hidden";
+	document.getElementById("gameMap").style.visiblity = "hidden";
 	document.getElementById("startScreen").style.visibility = "visible";
 
-	// Reset vars
+	// Reset vars, update score
 	locationIndex = 0;
 	score = 0;
+	document.getElementById("score").innerHTML = "Score: " + score;
 
 	// Remove markers
 	for(index = 0; index < NUM_LOCATIONS; index++) {
