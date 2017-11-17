@@ -1,0 +1,60 @@
+
+Contact Manager
+Overview
+
+We are going to develop the client side of a Web based Contact Manager. Since we may build on this later when we learn more about server-side processing and database/file storage, you will want to make certain that you are comfortable with the results of this project.
+
+For this project you will need to design an attractive and user friendly web application where contacts can be created, read (in memory), updated (in memory), and deleted (CRUD features). Since it is not required that you are able to save your data between session, you should programmatically prepopulate your Contact Manager application with a list of at least 10 contacts.
+
+The application should also provide the ability to dynamically search your list of contacts by typing in a search field and updating a list so that it contains only the contacts that meet the current pattern of characters in currently in the search field. The search field should also support regular expressions; however, if the user types in a regular expression, the search should not occur until the regular expression is completed.
+
+At a minimum your application should contain fields for Name (you can decide whether you want to break it into first, last, middle), multiple addresses (home, work, other would be possibilities), multiple phone numbers, birthday, age, notes, and the ability to add custom fields.
+
+For the purposes of this project, we will be assuming only US English language, addresses, phone numbers, etc. However, It would be beneficial to spend a couple minutes considering what it would take to implement a US Spanish, or Australian English, or Indian Hindi version of the application.
+
+In addition to proper validation (phone number, state, birthdays, etc.), proper calculations (age based on birthday, etc.), your application should make use of some level of auto completion. For example, if a zip code is added for Chicago, you should default your city and state to Chicago and IL respectively.
+What You Need to Know
+
+For this assignment you will need to know:
+
+    HTML
+    CSS
+    JavaScript
+
+Requirements
+
+The web page should be hosted on your Azure website and contain the following:
+
+    Header text (your names, project#, course name, semester)
+    Application Title
+    Your design and implementation of a Contact Manager UI
+    A separate "Getting Started" or "Help" section that provides an overview of your application and explains how to use it from a user perspective
+
+Styling: All elements in the web page should be styled using CSS3. You will be graded based on the styling and ease of use. You should ask at least one other person to try the game without your input. Watch them and listen to their feedback.
+
+Event Processing: You will need to utilize event processing in several areas in this applciaiton including Search.
+Additional Requirements
+
+The following additional items should also be completed as part of the assignment:
+
+    Separate your HTML, CSS, and JavaScript code into separate files and hosted on your Azure website
+    Include a block comment containing your name, course name, project number, and semester at the top of each file
+    Verify that your page should display correctly when using the Google Chrome browser
+    Validate your HTML5 file using the W3C validator service... Google search "HTML validator" or "CSS validator" if you are having difficulty finding the W3C validation service
+    Utilize proper programming style including the use of whitespace (line breaks and indents) to separate sections of your code
+    Your code should produce no errors or warning during validation/execution
+    Your code needs to follow proper programming style including use of whitespace (line breaks and indents) to separate sections of your code and comments to document the your
+
+What to Submit
+
+When submitting the project through Blackboard:
+
+    Submit a single professional looking HTML page/file named "contact-manager-project-xxx.html" where "xxx" are your initials in lower case
+    Include your name, course name, project number, and semester at the top of page
+    A summary of the validation and autocompletion rules that you chose to implement and why you chose them
+    A summary of the user feedback that you received when you had someone else look at the application.
+    Include a brief summary of your experience with the project (what you were able to accomplish and what you were not able to complete)
+    Include a direct link to your project and additional link to your Azure landing page that links to all your projects and labs
+    Optionally include any comments/suggestions on how this project could be improved
+
+

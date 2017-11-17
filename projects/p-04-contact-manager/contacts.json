@@ -1,0 +1,253 @@
+{
+	"0" : {
+		"name" : "John Doe",
+
+		"phoneNum" : [
+			"00000000000",
+			"11111111111",
+			"22222222222"
+		],
+		
+		"group" : [
+			"Work",
+			"School"
+		],
+
+		"email" : [
+			"JohnDoe@gmail.com"
+		],
+
+		"address" : [
+			"12345 ABC Lane"
+		],
+
+		"birthday" : "21 September 1996",
+
+		"note" : "Owes me $20; Jane's husband"
+	},
+
+
+	"1" : {
+		"name" : "Jane Doe",
+
+		"phoneNum" : [
+			"33333333333",
+			"44444444444"
+		],
+
+		"groups" : [
+			"School"
+		],
+
+		"email" : [ 
+			"JaneDoe@gmail.com"
+		],
+
+		"address" : [
+			"12345 ABC Lane"
+		],
+
+		"birthday" : "17 June 1998",
+
+		"note" : "John's Wife"
+	},
+
+	"2" : {
+		"name" : "John Smith",
+
+		"phoneNum" : [
+			"55555555555",
+			"66666666666"
+		],
+
+		"groups" : [
+			"Family"
+		],
+
+		"email" : [
+			"JohnSmith@gmail.com"
+		],
+
+		"address" : [
+			"9513 Cedar Road"
+		],
+
+		"birthday" : "15 August 1953",
+
+		"note" : "Brother-in-law"
+	},
+	
+	"3" : {
+		"name" : "Mike Lebowski",
+
+		"phoneNum" : [
+			"93513586151"
+		],
+		
+		"group" : [
+			
+		],
+
+		"email" : [
+			"MikeLebowski@gmail.com"
+		],
+
+		"address" : [
+			"3765 Hillside Street"
+		],
+
+		"birthday" : "8/24/1992",
+
+		"note" : "RIP"
+	},
+
+	"4" : {
+		"name" : "Sally A Slawson",
+
+		"phoneNum" : [
+			"785-699-1711",
+			"620-313-0887"
+		],
+		
+		"group" : [
+		
+		],
+
+		"email" : [
+			"ROfaSkepsis@gmail.com"
+		],
+
+		"address" : [
+			"4519 Dog Hill Lane"
+		],
+
+		"birthday" : "4/9/1984",
+
+		"note" : "Kansas"
+	},
+
+	"5" : {
+		"name" : "Maritza J Loomis",
+
+		"phoneNum" : [
+			"409-877-3361",
+			"281-235-4767"
+		],
+		
+		"group" : [
+		
+		],
+
+		"email" : [
+			"pnoyspartan78@gmail.com"
+		],
+
+		"address" : [
+			"4879 Cedar Lane"
+		],
+
+		"birthday" : "8/31/1990",
+
+		"note" : 
+	},
+
+	"6" : {
+		"name" : "Chrystal S Armbruster",
+
+		"phoneNum" : [
+			"715-770-1061",
+			"715-590-9330"
+		],
+		
+		"group" : [
+		
+		],
+
+		"email" : [
+			"IwninKex@gmail.com"
+		],
+
+		"address" : [
+			"4517 Tea Berry Lane"
+		],
+
+		"birthday" : "1/28/1988",
+
+		"note" : ""
+	},
+
+	"7" : {
+		"name" : "Travis C Pan",
+
+		"phoneNum" : [
+			"931-361-1755",
+			"615-852-5264"
+		],
+		
+		"group" : [
+		
+		],
+
+		"email" : [
+			"JIAGbThiasus@gmail.com"
+		],
+
+		"address" : [
+			"2552 McDowell Street"
+		],
+
+		"birthday" : "931-361-1755",
+
+		"note" : "615-852-5264"
+	},
+	
+	"8" : {
+		"name" : "Javier P Groom",
+
+		"phoneNum" : [
+			"650-376-8586",
+			"415-725-3911"
+		],
+		
+		"group" : [
+		
+		],
+
+		"email" : [
+			"monte1971@gmail.com"
+		],
+
+		"address" : [
+			"4897 Wolf Pen Road"
+		],
+
+		"birthday" : "3/25/1986",
+
+		"note" : "Unpleasant"
+	},
+	
+	"9" : {
+		"name" : "Kathy J Martin",
+
+		"phoneNum" : [
+			"772-708-1604",
+			"561-553-6979"
+		],
+		
+		"group" : [
+		
+		],
+
+		"email" : [
+			"jena2004@yahoo.com"
+		],
+
+		"address" : [
+			"3906 Travis Street"
+		],
+
+		"birthday" : "3/25/1969",
+
+		"note" : "Divorced, Dept of Checks & Balances"
+	}
+}
