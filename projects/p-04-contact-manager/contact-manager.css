@@ -1,0 +1,79 @@
+/**
+ * @author Thomas Lenz <thomas.lenz96@gmail.com> AS The2b
+ * @date 01 November 2017
+ * @project Contact Manager
+ * @file contact-manager.css
+ * @course Web and Dist Programming
+ * @semester Fall, 2017
+ */
+
+.screen {
+	
+}
+
+.searchBar {
+	/*
+	 * Initial innerHTML = "Search"
+	 * Initial text color = grey
+	 * On click, remove it
+	 * On losing focus, if all whitespace, reinstate intial rules
+	 * On any input change, search contact list using the inner html as a regex
+	 *
+	 * BG almost white, but a bit of yellow?
+	 * Need a button at the right hand side
+	 * On hitting enter when something other than whitespace, focus on contact list 
+	 */
+
+	width:90%;
+	position:relative;
+	left:5%;
+	color:black;
+	font-size:16px;
+	display:block;
+}
+
+table.contactList { /* Most likely a table with one column and dynamically updating entries. Top is New Contact only if search bar is empty */
+
+	/* Same size as the search bar, with a small area between the two */
+	margin-top:15px;
+	width:90%;
+	position:relative;
+	left:5%;
+	border:1px solid grey;
+	border-collapse:collapse;
+	empty-cells:show;
+}
+
+tr {
+	border-bottom:1px solid grey;
+	width:100%;
+}
+
+tr:hover {
+	background-color:#ff8; /* Yellow-ish. Highlighted, basically */
+	cursor:pointer;
+}
+
+.emptyForm {
+	color:grey;
+	font-size:12px;
+	font-style:italic;
+}
+
+button.right {
+	position:relative;
+	right:40px;
+	bottom: 40px;
+}
+
+button.mid {
+	position:relative;
+	bottom:40px;
+	left:50%;
+}
+
+button.left {
+	position:relative;
+	bottom:40px;
+	left:40px;
+}

@@ -1,0 +1,48 @@
+{
+	"0" : {
+		"name" : "John Doe",
+
+		"phoneNum" : [
+			"00000000000",
+			"11111111111",
+			"22222222222"
+		],
+		
+		"groups" : [
+		
+		],
+
+		"email" : "JohnDoe@gmail.com"
+	},
+
+
+	"1" : {
+		"name" : "Jane Doe",
+
+		"phoneNum" : [
+			"33333333333",
+			"44444444444"
+		],
+
+		"groups" : [
+			"Work"
+		],
+
+		"email" : "JaneDoe@gmail.com"
+	},
+
+	"2" : {
+		"name" : "John Smith",
+
+		"phoneNum" : [
+			"55555555555",
+			"66666666666"
+		],
+
+		"groups" : [
+			"School"
+		],
+
+		"email" : "JohnSmith@gmail.com"
+	}
+}
