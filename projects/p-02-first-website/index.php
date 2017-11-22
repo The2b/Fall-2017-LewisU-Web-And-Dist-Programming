@@ -13,8 +13,11 @@
 		<!-- Source CSS -->
 		<link rel="stylesheet" type="text/css" href="./azure-website.css"></link>
 		<meta charset="utf-8" />
-		<!-- <title>Web and Distributed Programming Assignment Archive</title> -->
+		
 		<title>WaDPAA</title>
+
+		<!-- Because fuck Ajit -->
+		<script src="https://widget.battleforthenet.com/widget.js" async></script>
 	</head>
 
 	<!-- Stops the margins from breaking the top navbar -->
