@@ -11,7 +11,6 @@
 <html>
 	<head>
 		<!-- Load jQuery from Google -->
-		<script src="./contact-manager.js" type="text/javascript"></script>
 		<link rel="stylesheet" type="text/css" href="./contact-manager.css" />
 		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 		<meta charset="utf-8" />
@@ -19,13 +18,15 @@
 		<title>Contact Manager</title>
 	</head>
 
-	<body onload="initApplet('contacts.json')">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>  
-		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<!--<body onload="initApplet('http://tlenz-distprog.azurewebsites.net/deployments/projects/p-04-contact-manager/contacts.json')">-->
+	<body onload="initApplet('./contacts.json')">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" type="text/javascript"></script>
+		<script src="./contact-manager.js" type="text/javascript"></script>
 		<!-- Load the header here? -->
 
 		<!-- Help button -->
-		<!--<img id="help" src="./help-contents.png" alt="Help" class="help"></img>-->
+		<img id="help" src="./help-contents.png" alt="Help" class="help"></img>
 
 		<!-- Create the edit/create/delete dialog space -->
 		<div id="createForm">

@@ -56,7 +56,7 @@ if(!Array.prototype.push) {
 }
 
 function getContacts() {
-	return this.contacts;
+	return contacts;
 }
 
 function setContacts(newContacts) {
@@ -68,12 +68,11 @@ function setContacts(newContacts) {
  * This will read in once jQuery is loaded; That means that we can use PHP to pull the string
  *
  * @param String json
- * @return Object[] contacts
  */
 function readContacts(json) {
 	// So, I was having errors testing this on the file level. The fix is to force the MIME type to a JSON
 	$.ajaxSetup({
-		async:false,
+		async:true,
 		beforeSend: function(xhr){
 			if (xhr.overrideMimeType) {
 				xhr.overrideMimeType("application/json");
@@ -82,7 +81,6 @@ function readContacts(json) {
 	});
 
 	$.getJSON(json, function(data) {
-		var jsonData = [];
 		$.each(data, function(index,value) {
 			var entry = new Object();
 			entry.name = value.name;
@@ -92,11 +90,11 @@ function readContacts(json) {
 			entry.address = value.address;
 			entry.birthday = value.birthday;
 			entry.note = value.note;
-			contacts.push(entry);
+			contacts[contacts.length] = entry;
 		});
 
 		console.log("Populated");
-		alert("Read");
+		alert(contacts.length);
 	});
 }
 
@@ -104,7 +102,7 @@ function initApplet(json) {
 	readContacts(json);
 	createForm();
 	editForm();
-	buildTable(getContacts());
+	buildTable(contacts);
 	attachEvents();
 }
 
@@ -221,7 +219,6 @@ function regexMatch(regex, contactsArray) {
 
 	for(index = 0; index < contacts.length; index++) {
 		var indexOfName = displayedNames.indexOf(contacts[index]);
-		alert(indexOfName + ":" + index);
 		if(indexOfName == -1) {
 			$("#contactList tr").eq(index+1).css("display","none");
 		}

@@ -82,8 +82,8 @@ button.left {
 
 img.help {
 	position:absolute;
-	top:90%;
-	left:95%;
+	bottom:10%;
+	right:10%;
 	height:60px;
 	width:60px;
 }

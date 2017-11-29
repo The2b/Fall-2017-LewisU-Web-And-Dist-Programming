@@ -1,0 +1,11 @@
+Comma-based dilimiters:
+	Requires at least 1 comma.
+	Substr by commas, clear padding
+	First section must be a number, such as 900. This is not flexable.
+	Second section is a set of words, ending in some sort of street-suffix. I'm pulling it off Wikipedia.
+	An optional third section can be used. It can either be a 5 digit number, which would be parsed to the zip code, a 2 character state abbreviation, a full state name, or a city name. State names and abbreviations will be enumerated, meaning if it is a character set, it should default to city unless the value is found in the state name/abbr enum arrays.
+	An optional fourth section can be used, applying any of the above.
+	Same for a fifth.
+	I guess a US could be put in as well, but it would mostly be ignored since that's the scope of the project.
+
+No comma: Space delimiter; First field = houseNo, other cat'd and called the street address

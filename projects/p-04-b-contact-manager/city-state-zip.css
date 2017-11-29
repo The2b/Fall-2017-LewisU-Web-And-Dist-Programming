@@ -1,0 +1,33 @@
+/**
+ * @author Thomas Lenz <thomas.lenz96@gmail.com> AS The2b
+ * @date 17 November 2017
+ * @project City/State/Zip
+ * @file city-state-zip.css
+ * @course Web and Dist Programming
+ * @semester Fall, 2017
+ */
+
+/* Google says to always set the map height explicitly */
+.screen {
+	height:90%;
+	width:100%;
+	top:0;
+	left:0;
+	padding:0;
+	margin:0;
+	position:absolute;
+}
+
+body {
+	padding:0;
+	margin:0;
+	height:100%;
+}
+
+form.sb {
+	position:absolute;
+	top:4%;
+	left:10%;
+	width:50%;
+	z-index:10;
+}
